@@ -29,3 +29,22 @@ int main() {
 
   return 0;
 }
+
+    void randomPlay(canzone *Playlist){
+        int k,n,w=0;
+        srand(time(NULL));
+        printf("\n");
+        printf("riproduzione\n");
+        for (w=0;w<10;w++){
+            Playlist[w].rip=false;
+        }
+        for (k=0;k<10;k++){
+            do {
+            n = rand() % 10;
+            }
+            while(Playlist[n].rip==true);
+            printf("titolo: %s, autore: %s\n", Playlist[n].nome, Playlist[n].autore);
+            Playlist[n].rip=true;
+
+        }
+    }
