@@ -3,6 +3,13 @@
 #include <string.h>
 #define DIM_STR 2000
 
+typedef struct song{
+	int  n;
+	char name[50];
+	char artist[50];
+} song;
+
+
 int main() {
   FILE *fd;
   char buf[200];
