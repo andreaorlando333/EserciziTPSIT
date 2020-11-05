@@ -20,7 +20,7 @@ int main()
 {
     canzone Playlist[MAX];
     FILE *ptr;
-    ptr=fopen("\users\andreaorlando\Desktop\Documenti\programmi_c\playlist.csv", "rt");
+    ptr=fopen("/users/andreaorlando/Desktop/Documenti/Programmi_C/playlist.csv", "rt");
     if (ptr){
             printf("file ok!\n");
             Memorizzazione(Playlist,ptr);
