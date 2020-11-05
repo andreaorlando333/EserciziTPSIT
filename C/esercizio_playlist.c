@@ -19,6 +19,9 @@ int main() {
     printf("\n");
     
     fd=fopen("/Users/andreaorlando/desktop/programmi_c/playlist.csv", "r");
+	mem(Playlist);
+	randomPlay(Playlist);
+	
      if( fd==NULL ) {
         perror("Errore in apertura del file\n");
         exit(1);
@@ -36,6 +39,32 @@ int main() {
 
   return 0;
 }
+
+void mem(canzone* Playlist, FILE* ptr){
+            int i=0;
+            char vet[MAX];
+            const char *c = ",";
+            char *field;
+            while (fgets(vet,MAX,ptr)){
+
+            field = strtok(vet, c);
+
+            Playlist[i].num = atoi(field);
+            printf("numero: %d\n",Playlist[i].num);
+
+
+            strcpy(Playlist[i].nome, strtok(NULL, c));
+            printf("titolo: %s\n",Playlist[i].nome);
+
+            strcpy(Playlist[i].autore, strtok(NULL, c));
+            Playlist[i].autore[strlen(Playlist[i].autore)-1] = '\0';
+            printf("autore: %s\n",Playlist[i].autore);
+
+            i++;
+            }
+
+    }
+
 
     void randomPlay(song *Playlist){
         int k,n,w=0;
