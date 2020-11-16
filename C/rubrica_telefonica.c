@@ -94,7 +94,7 @@ int main()
 		}while(input2 == 1);	
 
 		main();
-	}
+	
 
 
 	}else if(input == 2){
