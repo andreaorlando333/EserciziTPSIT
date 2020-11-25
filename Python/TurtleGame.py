@@ -9,6 +9,7 @@ win.title("Gioco 1")
 win.bgcolor("green")
 win.setup(width=800, height=800)
 
+# Funzione salto
 def jump:
 	robot.forward(50)
 	print("Jump")
