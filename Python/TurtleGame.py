@@ -17,4 +17,5 @@ def jump:
 win.listen()
 win.onkey(jump, "space")
 
+# Loop finestra
 win.mainloop()
