@@ -5,10 +5,8 @@ import turtle
 win = Screen()
 t = Turtle()
 l = 50
-
-win.bgcolor("green")
+win.bgcolor("red")
 win.setup(width=800, height=800)
-
 def controllo():
     if(t.ycor()+l) > win.window_height()/2:
         return 1
@@ -20,38 +18,30 @@ def controllo():
         return 4
     else:
         return 0
-
-
-
 def up():
     if controllo() != 1:
         t.setheading(90)
         t.forward(l)
     else:
         pass    
-
 def down():
     if controllo() != 2:
         t.setheading(270)
         t.forward(l) 
     else:
         pass           
-
 def right():
     if controllo() != 3:
         t.setheading(0)
         t.forward(l)
     else:
         pass    
-        
-
 def left():
     if controllo() != 4:
         t.setheading(180)
         t.forward(l)
     else:
         pass    
-
 win.listen()    
 win.onkey(up, "Up")   
 win.onkey(down, "Down")  
