@@ -2,8 +2,8 @@
 
 import turtle
 
-win = Screen()
-t = Turtle()
+win = turtle.Screen()
+t = turtle.Turtle()
 l = 50
 win.bgcolor("red")
 win.setup(width=800, height=800)
