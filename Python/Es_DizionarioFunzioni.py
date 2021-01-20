@@ -1,5 +1,6 @@
 
 # Esercizio con Dizionario Funzioni
+# Programma per somma/moltiplicazione
 
 def somma(a, b):
 	return a+b
