@@ -1,3 +1,6 @@
+
+// Realizzazione metodo split in C++
+
 #include <iostream>
 #include <string.h>
 #include <stdio.h>
