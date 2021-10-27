@@ -1,3 +1,6 @@
+
+// Esercizio per gestire i CSV 
+
 #include <iostream>
 #include <string.h>
 #include <stdio.h>
